@@ -1,0 +1,21 @@
+    {%extends 'menu.html' %}
+
+    {% block content %}
+     
+    <div class="container">
+        <div class="colum md"
+        <div class="row"> 
+            <h3 class="titulo"> {{ titulo }}</h3>
+            <h5 class="profissao">Profissão: {{ dados.profissao }} </h5>
+            <h5 class="canal">Canal: {{ dados.canal }}</h5>
+        </div>
+
+        <div class="row justify-content-center align-items-center vh-90" >
+          <div class="col-auto">
+            <img class="imgquadrada" src="{{ url_for('static', filename='/img/python.jpg') }}">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endblock %}
